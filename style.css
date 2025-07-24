@@ -1,74 +1,97 @@
+/* Global Styles */
 body {
   font-family: 'Garamond', serif;
-  background-color: #f5f5dc; /* beige */
-  color: #000000;
+  font-size: 18px;
+  background-color: #f5f5dc; /* Beige background */
+  color: #000;
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 header {
-  background-color: #001f3f; /* navy */
-  color: white;
-  text-align: center;
+  background-color: #001f3f; /* Navy */
+  color: #f5f5dc;            /* Beige text */
   padding: 40px 20px;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 3em;
-  font-weight: bold;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 3.8em;
+  margin-bottom: 12px;
 }
 
 header .quote {
-  margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: italic;
-  color: #f5f5dc;
+  margin-bottom: 24px;
 }
 
-/* Navigation */
+/* Navigation Bar */
+nav {
+  background-color: #fdf6e3; /* Creamy background */
+  border-top: 2px solid #001f3f;
+  border-bottom: 2px solid #001f3f;
+  padding: 10px 0;
+  text-align: center;
+}
+
 nav ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
   margin: 0;
-  background-color: #003366;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 16px;
 }
 
 nav ul li a {
-  color: #f5f5dc;
+  font-size: 1.2em;
+  color: #001f3f;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px;
-  display: block;
-  transition: background 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #f5f5dc;
-  color: #001f3f;
-  border-radius: 6px;
+  text-decoration: underline;
 }
 
-/* Content */
+/* Main Content */
 main {
   padding: 40px 20px;
 }
 
-.welcome {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Section Headings & Text */
+section h2 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #001f3f;
+}
+
+section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Sign-In Button */
+.signin-btn {
+  background-color: #fdf6e3; /* Cream tone */
+  color: #001f3f;
+  font-family: 'Garamond', serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 14px 32px;
+  border: 2px solid #001f3f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: #f5e6ca; /* Slight hover shift */
 }
 
 /* Footer */
@@ -77,5 +100,5 @@ footer {
   color: #f5f5dc;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  font-size: 1em;
 }
