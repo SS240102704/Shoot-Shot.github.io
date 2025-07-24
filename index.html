@@ -46,49 +46,7 @@
     </section>
   </main>
 
-  <!-- AI Chatbot Widget -->
-  <div class="chatbot-widget">
-    <div class="chatbot-header">
-      <h3>Vault Guide</h3>
-      <p>Your AI-powered assistant</p>
-    </div>
-
-    <div class="chatbot-window" id="chat-window">
-      <div class="chatbot-message bot">Hello Empress 👑 What would you like help with?</div>
-    </div>
-
-    <div class="chatbot-input">
-      <input type="text" id="user-input" placeholder="Type your question..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
-
-  <script>
-    async function sendMessage() {
-      const input = document.getElementById("user-input").value;
-      const chatWindow = document.getElementById("chat-window");
-
-      let userDiv = document.createElement("div");
-      userDiv.className = "chatbot-message user";
-      userDiv.textContent = input;
-      chatWindow.appendChild(userDiv);
-
-      const response = await fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: input })
-      });
-
-      const data = await response.json();
-
-      let botDiv = document.createElement("div");
-      botDiv.className = "chatbot-message bot";
-      botDiv.textContent = data.reply;
-      chatWindow.appendChild(botDiv);
-
-      document.getElementById("user-input").value = "";
-    }
-  </script>
+  
 
   <!-- Footer -->
   <footer>
