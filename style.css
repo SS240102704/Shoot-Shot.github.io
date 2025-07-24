@@ -102,3 +102,52 @@ footer {
   padding: 20px;
   font-size: 1em;
 } 
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.course-card {
+  background-color: #fdf6e3;
+  border: 2px solid #001f3f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #001f3f;
+}
+
+.course-card h3 {
+  font-size: 1.6em;
+  color: #001f3f;
+  margin-top: 18px;
+}
+
+.course-card p {
+  font-size: 1.1em;
+  padding: 0 14px;
+  margin: 12px 0 18px;
+  line-height: 1.5;
+}
+
+.course-btn {
+  background-color: #001f3f;
+  color: #fdf6e3;
+  font-size: 1.1em;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.course-btn:hover {
+  background-color: #003366;
+}
