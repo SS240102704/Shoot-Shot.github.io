@@ -1,3 +1,4 @@
+/* 🔧 Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
@@ -6,39 +7,101 @@ body {
   color: #333;
 }
 
+/* 🎯 Header */
 header {
-  background-color: #222;
+  background-color: #1c1c1c;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-style: italic;
+  font-size: 1em;
+}
+
+/* 🔗 Navigation Bar */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #444;
-  padding: 10px;
+  background-color: #333;
+  padding: 12px;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 18px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 6px;
 }
 
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* 📦 Main Content */
 main {
-  padding: 30px;
+  padding: 40px 20px;
 }
 
+/* 📄 Section Blocks */
 section {
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #222;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  border-left: 5px solid #444;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+section ul li {
+  margin-bottom: 8px;
+}
+
+section ul li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 🦶 Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
   padding: 20px;
-  border-radius: 8px;
+  font-size: 0.9em;
+  margin-top: 30px;
 }
