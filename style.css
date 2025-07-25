@@ -151,3 +151,44 @@ footer {
 .course-btn:hover {
   background-color: #003366;
 }
+.subtopic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.subtopic-card {
+  background-color: #fdf6e3;
+  border: 2px solid #001f3f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.subtopic-card h3 {
+  font-size: 1.5em;
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+.subtopic-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.subtopic-card .course-btn {
+  background-color: #001f3f;
+  color: #fdf6e3;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
+}
+
+.subtopic-card .course-btn:hover {
+  background-color: #003366;
+}
