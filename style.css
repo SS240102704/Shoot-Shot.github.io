@@ -244,3 +244,17 @@ footer {
     font-size: 0.95rem;
   }
 }
+/* Subtopic Grid Layout - Two Cards per Row */
+.subtopic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.subtopic-card {
+  flex: 0 1 45%;
+  min-width: 320px;
+  max-width: 460px;
+}
