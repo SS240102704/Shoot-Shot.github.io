@@ -258,3 +258,24 @@ footer {
   min-width: 320px;
   max-width: 460px;
 }
+/* ========== Subtopic Links Inside Card ========== */
+.subtopic-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.subtopic-links li {
+  margin: 6px 0;
+}
+
+.subtopic-links a {
+  color: #001f3f;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.subtopic-links a:hover {
+  color: #0074D9;
+}
